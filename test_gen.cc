@@ -26,7 +26,7 @@ int main(int argc, char** argv){
             cout << input << "[" << setw(2) << right << j << "], ";
             cout << input << "[" << setw(2) << right << i << "] );\n";
         }
-        cout << "    AN64 an" << i << "( o[" << i << "], {";
+        cout << "    AN64   an" << i << "( o[" << i << "], {";
         for( int k = 0, j = i+1; k < 64; ++j, ++ddd, ++k ){
             if( ddd < d ){
                 cout << "dummy[" << ddd << "]";
