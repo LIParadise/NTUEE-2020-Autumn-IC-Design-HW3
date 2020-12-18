@@ -69,7 +69,7 @@ module OR15( o, i );
     OR4 or_0_3( dummy0, i[0],   i[1],   i[2],   i[3]   );
     OR4 or_4_7( dummy1, i[4],   i[5],   i[6],   i[7]   );
     OR4 or_8_B( dummy2, i[8],   i[9],   i[10],  i[11]  );
-    OR3 or_C_E( dummy3, i[12],  i[13],  i[14]          ); 
+    OR3 or_C_E( dummy3, i[12],  i[13],  i[14]          );
     OR4 ret   ( o,      dummy0, dummy1, dummy2, dummy3 );
 endmodule
 
@@ -80,7 +80,7 @@ module OR20( o, i );
     OR4 or_0_3( dummy[0], i[0],     i[1],     i[2],     i[3]   );
     OR4 or_4_7( dummy[1], i[4],     i[5],     i[6],     i[7]   );
     OR4 or_8_B( dummy[2], i[8],     i[9],     i[10],    i[11]  );
-    OR4 or_C_F( dummy[3], i[12],    i[13],    i[14],    i[15]  ); 
+    OR4 or_C_F( dummy[3], i[12],    i[13],    i[14],    i[15]  );
     OR4 or_G_J( dummy[4], i[16],    i[17],    i[18],    i[19]  );
     OR4 dummy ( dummy[5], dummy[0], dummy[1], dummy[2], dummy[3] );
     OR2 ret   ( o       , dummy[5], dummy[4] );
@@ -93,7 +93,7 @@ module OR32( o, i );
     OR4 or_0_3( dummy[0], i[0],     i[1],     i[2],     i[3]   );
     OR4 or_4_7( dummy[1], i[4],     i[5],     i[6],     i[7]   );
     OR4 or_8_B( dummy[2], i[8],     i[9],     i[10],    i[11]  );
-    OR4 or_C_F( dummy[3], i[12],    i[13],    i[14],    i[15]  ); 
+    OR4 or_C_F( dummy[3], i[12],    i[13],    i[14],    i[15]  );
     OR4 or_G_J( dummy[4], i[16],    i[17],    i[18],    i[19]  );
     OR4 or_K_N( dummy[5], i[20],    i[21],    i[22],    i[23]  );
     OR4 or_O_R( dummy[6], i[24],    i[25],    i[26],    i[27]  );
