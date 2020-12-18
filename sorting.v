@@ -292,8 +292,21 @@ module THRES_6_6( o, A, B, C, D, E, F );
 endmodule
 
 module gravity_CALculation( o0, o1, o2, o3, o4, o5, i0, i1, i2, i3, i4, i5 );
-    input  [63:0] i0, i1, i2, i3, i4, i5;
+    input  [62:0] i0, i1, i2, i3, i4, i5;
     output [5:0]  o0, o1, o2, o3, o4, o5;
+    wire   [62:0] w0, w1, w2, w3, w4, w5;
+    module THRES_1_6 rank0( w0, i0, i1, i2, i3, i4, i5 );
+    module THRES_2_6 rank1( w1, i0, i1, i2, i3, i4, i5 );
+    module THRES_3_6 rank2( w2, i0, i1, i2, i3, i4, i5 );
+    module THRES_4_6 rank3( w3, i0, i1, i2, i3, i4, i5 );
+    module THRES_5_6 rank4( w4, i0, i1, i2, i3, i4, i5 );
+    module THRES_6_6 rank5( w5, i0, i1, i2, i3, i4, i5 );
+    module gravity_ENCoder( o0, w0 );
+    module gravity_ENCoder( o1, w1 );
+    module gravity_ENCoder( o2, w2 );
+    module gravity_ENCoder( o3, w3 );
+    module gravity_ENCoder( o4, w4 );
+    module gravity_ENCoder( o5, w5 );
 endmodule
 
 `define sanitize(63_bit_vec) \
